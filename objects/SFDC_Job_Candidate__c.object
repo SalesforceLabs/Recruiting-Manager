@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>InDevelopment</deploymentStatus>
+    <description>Link Object</description>
+    <enableReports>true</enableReports>
+    <fields>
+        <fullName>SFDC_Candidate__c</fullName>
+        <label>Candidate</label>
+        <referenceTo>SFDC_Candidate__c</referenceTo>
+        <relationshipLabel>Job Candidates</relationshipLabel>
+        <relationshipName>R00N30000001WXBxEAO</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SFDC_Job__c</fullName>
+        <label>Job</label>
+        <referenceTo>SFDC_Job__c</referenceTo>
+        <relationshipLabel>Job Candidates</relationshipLabel>
+        <relationshipName>R00N30000001WXBwEAO</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <type>MasterDetail</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <label>Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Phone Screen</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>On-Site Interviews</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Negotiation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Preparing Offer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Accepted</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Declined</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <label>Job Candidate</label>
+    <language>en_US</language>
+    <nameField>
+        <displayFormat>JID{000000}</displayFormat>
+        <label>Job Candidate ID</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Job Candidates</pluralLabel>
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>SFDC_Job__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>SFDC_Candidate__c</lookupDialogsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

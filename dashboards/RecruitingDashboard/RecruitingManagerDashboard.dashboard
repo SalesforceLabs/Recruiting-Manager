@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dashboard xmlns="http://soap.sforce.com/2006/04/metadata">
+    <backgroundEndColor>#FFFFFF</backgroundEndColor>
+    <backgroundFadeDirection>Diagonal</backgroundFadeDirection>
+    <backgroundStartColor>#DDDDDD</backgroundStartColor>
+    <description>Recruiting Manager Dashboard</description>
+    <leftSection>
+        <columnSize>Medium</columnSize>
+        <components>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Column</componentType>
+            <displayUnits>Auto</displayUnits>
+            <footer>Current Fiscal Quarter</footer>
+            <header># of Candidates per Positions</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>RecruitingManagerReports/OpenCandidateforOpenJobs</report>
+            <sortBy>RowValueDescending</sortBy>
+        </components>
+        <components>
+            <componentType>Table</componentType>
+            <footer>Current Fiscal Quarter</footer>
+            <header>Top 10 Employee Referrers</header>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>RecruitingManagerReports/CountofCandidateReferralsbyEmployee</report>
+        </components>
+    </leftSection>
+    <middleSection>
+        <columnSize>Medium</columnSize>
+        <components>
+            <componentType>Gauge</componentType>
+            <footer>Current Fiscal Quarter</footer>
+            <gaugeMax>30.0</gaugeMax>
+            <gaugeMin>0.0</gaugeMin>
+            <header>Hires vs. Target</header>
+            <indicatorBreakpoint1>10.0</indicatorBreakpoint1>
+            <indicatorBreakpoint2>20.0</indicatorBreakpoint2>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>RecruitingManagerReports/FilledPositions</report>
+        </components>
+        <components>
+            <componentType>Table</componentType>
+            <header>Target Hires by Department</header>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>RecruitingManagerReports/TargetHiresbyDepartment</report>
+        </components>
+    </middleSection>
+    <rightSection>
+        <columnSize>Medium</columnSize>
+        <components>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>ColumnStacked</componentType>
+            <displayUnits>Auto</displayUnits>
+            <header>Hires vs. Plan</header>
+            <legendPosition>Bottom</legendPosition>
+            <maxValuesDisplayed>3</maxValuesDisplayed>
+            <report>RecruitingManagerReports/HiresbyMonth</report>
+            <sortBy>RowLabelAscending</sortBy>
+        </components>
+    </rightSection>
+    <textColor>#000000</textColor>
+    <title>Recruiting Manager Dashboard</title>
+    <titleColor>#000000</titleColor>
+    <titleSize>12</titleSize>
+</Dashboard>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>InDevelopment</deploymentStatus>
+    <description>Company employee who has referred an applicant</description>
+    <enableActivities>true</enableActivities>
+    <enableReports>true</enableReports>
+    <fields>
+        <fullName>Employee_Email__c</fullName>
+        <label>Employee Email</label>
+        <type>Email</type>
+    </fields>
+    <fields>
+        <fullName>Employee_ID__c</fullName>
+        <label>Employee_ID</label>
+        <length>40</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Employee_Phone_Number__c</fullName>
+        <label>Employee Phone Number</label>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Employee_Start_Date__c</fullName>
+        <label>Employee Start Date</label>
+        <type>Date</type>
+    </fields>
+    <label>Referring Employee</label>
+    <language>en_US</language>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Employee_Email__c</columns>
+        <columns>Employee_Phone_Number__c</columns>
+        <columns>Employee_ID__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Referring Employee Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Referring Employees</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Employee_Email__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Employee_Phone_Number__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Employee_ID__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Employee_Email__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Employee_Phone_Number__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Employee_ID__c</lookupDialogsAdditionalFields>
+        <searchResultsAdditionalFields>Employee_Email__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Employee_Phone_Number__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Employee_ID__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>
